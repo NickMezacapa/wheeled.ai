@@ -11,7 +11,6 @@ const config = {
     'plugin:@typescript-eslint/stylistic-type-checked',
   ],
   rules: {
-    // These opinionated rules are enabled in stylistic-type-checked above.
     '@typescript-eslint/array-type': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
 
@@ -23,6 +22,7 @@ const config = {
       },
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    'no-unused-vars': [1, { args: 'after-used', argsIgnorePattern: '^_' }],
   },
 }
 

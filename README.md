@@ -1,28 +1,56 @@
-# Create T3 App
+# Wheeled.AI 🚘
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Overview
 
-## What's next? How do I make an app with this?
+WheeledAI is an innovative project that aims to simplify and automate the vehicle inspection process for rideshare drivers. This README provides an initial overview of the project, its significance, and the problems it aims to address.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Table of Contents
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- [Why WheeledAI?](#why-wheeledai)
+- [Key Features](#key-features)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Why WheeledAI?
 
-## Learn More
+### The Challenge
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Rideshare drivers often face the hassle of scheduling and attending in-person vehicle inspections, which can be time-consuming, very costly, and delays their ability to start earning income. This is especially problematic for drivers who are new to the rideshare industry and are unfamiliar with the inspection process.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### The Solution
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+WheeledAI leverages cutting-edge AI and computer vision technologies to revolutionize the inspection process. By automating the inspection of rideshare vehicles, WheeledAI aims to:
 
-## How do I deploy this?
+- Improve efficiency: No more waiting for inspection appointments.
+- Reduce costs: A cost-effective alternative to traditional inspections.
+- Enhance safety: Ensures vehicles meet safety and compliance standards.
+- Scale seamlessly: Accommodates a growing number of rideshare drivers.
+- Ease of use: Drivers can complete inspections from the comfort of their homes, without ever leaving their driveway. Direct integration with rideshare platforms further simplifies the process.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Key Features
+
+- AI-Powered Inspection: Utilizes computer vision to detect and assess vehicle components (i.e. odometer, tire tread, seatbelts, etc.).
+- Media Handling: Efficiently stores user-uploaded images and videos of their vehicles.
+- User-Friendly Interface: Guides drivers through the inspection process with ease. Users can complete their inspection on a variety of different devices.
+- Scalable Infrastructure: Handles a large volume of inspections concurrently.
+- Data Privacy: Ensures user data security and compliance with regulations.
+- Quick, Accurate Results: Provides drivers with instant feedback on their inspection results, along with actionable insights. Drivers can also view their inspection history and track their progress over time.
+
+## Getting Started
+
+This section will be updated as the project progresses. Stay tuned for installation instructions and usage guidelines.
+
+## Contributing
+
+Contributions to WheeledAI are welcome! Whether you're a developer, designer, or have valuable insights to share, we appreciate your contributions. Please see our [Contribution Guidelines](CONTRIBUTIONS.md) for details on how to get involved.
+A [Contributor License Agreement (CLA)](https://yahoo.github.io/oss-guide/docs/resources/what-is-cla.html) is required for all contributions to WheeledAI. Please sign the CLA before submitting a pull request.
+
+## License
+
+This project is proprietary, and all rights are reserved by Wheeled.AI.
+You may not use, modify, distribute, or create derivative works based on this code without the express written permission of Wheeled.AI. Contributions to this project are subject to the [Contributor License Agreement (CLA)](https://yahoo.github.io/oss-guide/docs/resources/what-is-cla.html).
+
+---
+
+_Note: This README is a work in progress and will be updated as the project evolves._
