@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import NavLinks from '~/components/Headers/NavLinks'
+import Button from '~/components/Theme/Button'
 import Container from '~/components/Theme/Container'
 
 const HomeHeader = () => {
@@ -16,8 +17,18 @@ const HomeHeader = () => {
             >
               <h1 className="font-bold text-5xl">Wheeled.AI</h1>
             </Link>
-            <div className="ml-auto justify-end gap-x-6 hidden md:flex">
+            <div className="ml-auto justify-end items-center gap-x-6 hidden md:flex">
               <NavLinks />
+              <Button
+                variant="primary"
+                href="/login"
+                outline
+                animated
+                ariaLabel="Login Button"
+                className="px-4"
+              >
+                Login
+              </Button>
             </div>
           </div>
         </Container>

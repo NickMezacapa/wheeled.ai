@@ -15,6 +15,8 @@
     "build": "next build",
     "db:push": "prisma db push",
     "dev": "next dev",
+    "fix:lint": "eslint --fix .",
+    "format": "prettier --write .",
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start"
