@@ -42,7 +42,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <a
-      href={href}
+      aria-label={ariaLabel}
       className={clsx(
         'inline-flex justify-center items-center rounded-lg px-2 py-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors',
         baseStyles[styles],
@@ -54,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({
           : '',
         className
       )}
-      aria-label={ariaLabel}
+      href={href}
       onClick={onClick}
     >
       {children}

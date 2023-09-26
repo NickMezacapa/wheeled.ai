@@ -11,21 +11,21 @@ const HomeHeader = () => {
         <Container className="relative z-50 flex jusitfy-between">
           <div className="relative z-10 flex items-center gap-16 px-[2rem] pt-[3rem] w-full max-w-7xl">
             <Link
-              href="/"
               aria-label="Home"
               className="flex gap-2 justify-center items-center"
+              href="/"
             >
               <h1 className="font-bold text-5xl">Wheeled.AI</h1>
             </Link>
             <div className="ml-auto justify-end items-center gap-x-6 hidden md:flex">
               <NavLinks />
               <Button
-                variant="primary"
-                href="/login"
-                outline
                 animated
+                outline
                 ariaLabel="Login Button"
                 className="px-4"
+                href="/login"
+                variant="primary"
               >
                 Login
               </Button>

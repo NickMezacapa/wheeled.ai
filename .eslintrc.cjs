@@ -1,10 +1,22 @@
 /** @type {import("eslint").Linter.Config} */
 const config = {
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    jest: true,
+    node: true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+    },
+    ecmaVersion: 'latest',
     project: true,
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react'],
   extends: [
     'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended-type-checked',
@@ -23,7 +35,31 @@ const config = {
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'no-unused-vars': [1, { args: 'after-used', argsIgnorePattern: '^_' }],
+    'react/jsx-sort-props': [
+      // Sorts props alphabetically and by type
+      2,
+      {
+        callbacksLast: true,
+        shorthandFirst: true,
+        shorthandLast: false,
+        multiline: 'ignore',
+        ignoreCase: false,
+        noSortAlphabetically: false,
+        reservedFirst: true,
+        locale: 'auto',
+      },
+    ],
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      settings: {
+        react: {
+          version: 'detect',
+        },
+      },
+    },
+  ],
 }
 
 module.exports = config
