@@ -1,7 +1,16 @@
 {
-  "name": "wheeled",
+  "name": "wheeled.ai",
   "version": "0.1.0",
   "private": true,
+  "author": "Nick Mezacapa",
+  "email": "nmm.developer@gmail.com",
+  "description": "An innovative AI-powered vehicle inspection system designed to automate and simplify the inspection process for rideshare drivers, ensuring safety and efficiency.",
+  "browserslist": "defaults, not ie <= 11",
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "build": "next build",
     "db:push": "prisma db push",
@@ -18,7 +27,13 @@
     "@trpc/next": "^10.37.1",
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
+    "clsx": "^2.0.0",
+    "focus-visible": "^5.2.0",
+    "framer-motion": "^10.16.4",
     "next": "^13.4.19",
+    "next-seo": "^6.1.0",
+    "next-themes": "^0.2.1",
+    "postcss-focus-visible": "^9.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "^1.13.1",
@@ -26,7 +41,8 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",
-    "@types/node": "^18.16.0",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.7.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
@@ -34,11 +50,15 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.19",
+    "jest": "^29.7.0",
     "postcss": "^8.4.27",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.1",
     "prisma": "^5.1.1",
     "tailwindcss": "^3.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
     "typescript": "^5.1.6"
   },
   "ct3aMetadata": {
