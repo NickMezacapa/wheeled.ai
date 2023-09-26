@@ -7,6 +7,7 @@ const config = {
     jest: true,
     node: true,
   },
+  root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
