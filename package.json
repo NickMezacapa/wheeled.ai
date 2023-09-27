@@ -49,6 +49,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.0",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@types/eslint": "^8.44.2",
@@ -59,6 +60,7 @@
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "autoprefixer": "^10.4.14",
+    "babel-loader": "^8.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.19",
@@ -81,5 +83,8 @@
   "ct3aMetadata": {
     "initVersion": "7.20.2"
   },
-  "packageManager": "yarn@1.22.17"
+  "packageManager": "yarn@1.22.17",
+  "resolutions": {
+    "webpack": "^5"
+  }
 }

@@ -9,8 +9,5 @@ export const exampleRouter = createTRPCRouter({
       return {
         greeting: `Hello ${input.text}`,
       }
-    }),
-  getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.db.example.findMany()
-  }),
+    })
 })

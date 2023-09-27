@@ -26,7 +26,6 @@ const config = {
   rules: {
     '@typescript-eslint/array-type': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
-
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       {
@@ -34,8 +33,19 @@ const config = {
         fixStyle: 'inline-type-imports',
       },
     ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    'no-unused-vars': [1, { args: 'after-used', argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        argsIgnorePattern: '^_',
+      },
+    ],
+    'no-unused-vars': [
+      1,
+      {
+        args: 'after-used',
+        argsIgnorePattern: '^_',
+      },
+    ],
     'react/jsx-sort-props': [
       // Sorts props alphabetically and by type
       2,
@@ -62,5 +72,4 @@ const config = {
     },
   ],
 }
-
 module.exports = config
