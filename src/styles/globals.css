@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the intro hero section */
+.Animation-riseUp {
+  animation: riseUp 0.8s ease-in-out;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+}
