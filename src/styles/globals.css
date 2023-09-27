@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+.Animation-riseUp {
+  animation: riseUp 0.8s ease-in-out;
+  animation-delay: 0.15s;
+  animation-fill-mode: forwards;
+}
+
+.GradientBlur {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-filter: blur(180px);
+  filter: blur(200px);
+}
+
+.GradientBg {
+  background: conic-gradient(
+      from 180deg at 50% 50%,
+      #0aefff -69.37deg,
+      #0f83ff 31.88deg,
+      #76bcef 120deg,
+      #0a60e9 204.37deg,
+      #0aefff 290.63deg,
+      #0f83ff 391.87deg
+    ),
+    #a84ddf;
+  position: absolute;
+  top: 621px;
+  bottom: 289px;
+  width: 100%;
+  max-width: 980px;
+  opacity: 0.2;
+}
+
 @keyframes riseUp {
   0% {
     opacity: 0;
@@ -11,11 +62,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Apply the animation to the intro hero section */
-.Animation-riseUp {
-  animation: riseUp 0.8s ease-in-out;
-  animation-delay: 0.15s;
-  animation-fill-mode: forwards;
 }

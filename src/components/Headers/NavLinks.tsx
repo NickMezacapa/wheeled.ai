@@ -12,7 +12,7 @@ const NavLinks = () => {
         {[
           ['About', '/about'],
           ['Services', '/services'],
-          ['Platforms', '/platforms'],
+          ['Pricing', '/pricing'],
           ['FAQs', '/faqs'],
         ].map(([label, href], index) => (
           <li key={label} className="px-2">
