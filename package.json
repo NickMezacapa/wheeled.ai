@@ -49,6 +49,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/eslint": "^8.44.2",
     "@types/jest": "^29.5.5",
     "@types/node": "^20.7.0",

@@ -2,3 +2,4 @@ node_modules
 public
 _document.tsx
 jest.config.js
+commitlint.config.js

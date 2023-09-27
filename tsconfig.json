@@ -24,6 +24,7 @@
   "include": [
     ".eslintrc.cjs",
     "prettier.config.mjs",
+    "commitlint.config.js",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
