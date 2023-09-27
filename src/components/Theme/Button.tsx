@@ -44,11 +44,11 @@ const Button: React.FC<ButtonProps> = ({
     <a
       aria-label={ariaLabel}
       className={clsx(
-        'inline-flex justify-center items-center rounded-lg px-2 py-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors',
+        'inline-flex items-center justify-center rounded-lg px-2 py-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors',
         baseStyles[styles],
         outline ? 'border border-themeBorder' : 'border border-transparent',
         animated
-          ? 'hover:scale-[0.98] cursor-pointer hover:border hover:border-slate-400'
+          ? 'cursor-pointer hover:scale-[0.98] hover:border hover:border-slate-400'
           : '',
         className
       )}

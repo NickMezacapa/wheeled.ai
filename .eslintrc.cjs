@@ -53,7 +53,7 @@ const config = {
   },
   overrides: [
     {
-      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx', '*.mjs', '*.cjs'],
       settings: {
         react: {
           version: 'detect',
