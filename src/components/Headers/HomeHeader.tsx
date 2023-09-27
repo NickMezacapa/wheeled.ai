@@ -9,7 +9,7 @@ const HomeHeader = () => {
     <header>
       <nav className="flex flex-col items-center sm:block">
         <Container className="relative z-50 flex jusitfy-between">
-          <div className="relative z-10 flex items-center gap-16 px-[2rem] pt-[3rem] w-full max-w-7xl">
+          <div className="relative z-10 flex items-center gap-16 px-[2rem] pt-[3rem] w-full">
             <Link
               aria-label="Home"
               className="flex gap-2 justify-center items-center"
@@ -32,7 +32,7 @@ const HomeHeader = () => {
             </div>
           </div>
         </Container>
-        <h3 className="italic text-slate-400 px-[3rem] pt-[2.5rem] sm:px-[3.5rem] lg:px-[4rem] mt-[-1.5rem]">
+        <h3 className="italic text-graySecondary px-[3rem] pt-[2.5rem] sm:px-[3.5rem] lg:px-[4rem] mt-[-1.5rem]">
           AI-powered Vehicle Inspection Software
         </h3>
       </nav>

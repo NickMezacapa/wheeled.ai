@@ -18,9 +18,9 @@ interface ButtonStyles {
 }
 
 const baseStyles: ButtonStyles = {
-  primary: 'bg-slate-900 text-[#eae8ed]',
-  secondary: 'bg-[#eae8ed] text-slate-900',
-  transparent: 'bg-transparent text-[#eae8ed]',
+  primary: 'bg-slate-900 text-offWhite',
+  secondary: 'bg-offWhite text-dark',
+  transparent: 'bg-transparent text-offWhite',
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -46,9 +46,7 @@ const Button: React.FC<ButtonProps> = ({
       className={clsx(
         'inline-flex justify-center items-center rounded-lg px-2 py-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors',
         baseStyles[styles],
-        outline
-          ? 'border border-[hsla(0,0%,51%,0.2)]'
-          : 'border border-transparent',
+        outline ? 'border border-themeBorder' : 'border border-transparent',
         animated
           ? 'hover:scale-[0.98] cursor-pointer hover:border hover:border-slate-400'
           : '',

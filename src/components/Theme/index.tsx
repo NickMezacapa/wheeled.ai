@@ -39,10 +39,10 @@ const Theme = ({ children, classNames }: LayoutProps) => (
       <meta content="#da532c" name="msapplication-TileColor" />
       <meta content="#eae8ed" name="theme-color" />
     </Head>
-    <ThemeProvider attribute="class" enableSystem={true}>
+    <ThemeProvider attribute="dark" enableSystem={false}>
       <main
         className={clsx(
-          `h-auto min-h-screen w-screen max-w-full dark:bg-[#182633] bg-[#F6F5F8] text-[#eee] transition ease ${
+          `h-auto min-h-screen w-screen max-w-full dark:bg-themeDark bg-themeLight text-light transition ease ${
             classNames ?? ''
           } MainApp`
         )}
