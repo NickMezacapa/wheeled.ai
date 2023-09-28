@@ -9,88 +9,91 @@ datasource db {
 }
 
 model User {
-    id           Int       @id @default(autoincrement())
-    firstName    String
-    lastName     String
-    email        String    @unique
-    phoneNumber  String?
-    address      String?
-    dateOfBirth  DateTime?
-    profileImage String?
+    id               Int       @id @default(autoincrement())
+    firstName        String
+    lastName         String
+    email            String    @unique
+    phoneNumber      String?
+    address          String?
+    dateOfBirth      DateTime?
+    profileImage     String?
+    isPayingCustomer Boolean   @default(false)
 
     // Define relationships
-    vehicles    Vehicle[] // One-to-many relationship with vehicles
-    inspections Inspection[] // One-to-many relationship with inspections
+    vehicles    Vehicle[]
+    inspections Inspection[]
 
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
-    Media     Media[]
 
     @@index([id])
 }
 
 model Vehicle {
-    id          Int     @id @default(autoincrement())
-    make        String
-    model       String
-    year        Int
-    vinNumber   String  @unique
-    color       String?
-    mileage     Int?
-    description String?
+    id           Int     @id @default(autoincrement())
+    make         String
+    model        String
+    year         Int
+    color        String?
+    mileage      Int?
+    vinNumber    String  @unique
+    licensePlate String?
+    state        String?
+    description  String?
 
-    // Define the relationship
-    owner  User @relation(fields: [userId], references: [id])
-    userId Int
-
-    inspections Inspection[] // One-to-many relationship with inspections
+    // Define relationships
+    owner       User         @relation(fields: [userId], references: [id])
+    userId      Int
+    inspections Inspection[]
+    media       Media[]
 
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    @@index([id])
+    @@index([id, userId])
     @@index([userId])
 }
 
 model Media {
     id Int @id @default(autoincrement())
 
-    // Vehicle Images
-    interior Json? // JSON object for interior media
-    exterior Json? // JSON object for exterior media
-    tires    Json? // JSON object for tires media
-    mirrors  Json? // JSON object for mirrors media
+    interior Json?
+    exterior Json?
+    tires    Json?
+    mirrors  Json?
+    videos   Json?
 
-    // Videos
-    videos Json? // JSON object for videos
-
-    // Define the relationship to the user
-    owner  User @relation(fields: [userId], references: [id])
-    userId Int
-
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-
-    @@index([userId])
-}
-
-model Inspection {
-    id     Int      @id @default(autoincrement())
-    date   DateTime
-    type   String
-    status String
-
-    // Define the relationships
-    user   User @relation(fields: [userId], references: [id])
-    userId Int
-
+    // Define relationships
     vehicle   Vehicle @relation(fields: [vehicleId], references: [id])
     vehicleId Int
 
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    @@index([id])
-    @@index([userId])
+    @@index([id, vehicleId])
     @@index([vehicleId])
+}
+
+model Inspection {
+    id        Int      @id @default(autoincrement())
+    type      String
+    date      DateTime
+    time      String
+    location  String
+    inspector String
+    status    String // Use an enum for pass/fail
+    pdfCopy   String?
+
+    // Define relationships
+    vehicle   Vehicle @relation(fields: [vehicleId], references: [id])
+    vehicleId Int
+    user      User    @relation(fields: [userId], references: [id])
+    userId    Int
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@index([id, vehicleId, userId])
+    @@index([vehicleId])
+    @@index([userId])
 }
