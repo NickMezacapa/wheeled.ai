@@ -1,3 +1,5 @@
+import { type Session } from 'next-auth'
+import { SessionProvider } from 'next-auth/react'
 import { DefaultSeo } from 'next-seo'
 import { type AppType } from 'next/app'
 
@@ -11,13 +13,18 @@ import '~/styles/globals.css'
 
 const spaceGt = Space_Grotesk({ subsets: ['latin'] })
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+const MyApp: AppType<{ session: Session | null }> = ({
+  Component,
+  pageProps: { session, ...pageProps },
+}) => {
   return (
     <Theme>
-      <DefaultSeo {...SeoConfig} />
-      <main className={spaceGt.className}>
-        <Component {...pageProps} />
-      </main>
+      <SessionProvider session={session}>
+        <DefaultSeo {...SeoConfig} />
+        <main className={spaceGt.className}>
+          <Component {...pageProps} />
+        </main>
+      </SessionProvider>
     </Theme>
   )
 }

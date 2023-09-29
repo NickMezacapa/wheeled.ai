@@ -1,4 +1,8 @@
-import { createTRPCRouter, publicProcedure } from '~/server/api/trpc'
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from '~/server/api/trpc'
 
 import { changeUserPassword } from '~/utils/helpers/changeUserPassword'
 import { createNewUser } from '~/utils/helpers/createNewUser'
@@ -13,12 +17,12 @@ export const userRouter = createTRPCRouter({
     .query(async ({ input }) => await createNewUser(input)),
 
   // Deletes an existing user
-  deleteAccount: publicProcedure
+  deleteAccount: protectedProcedure
     .input(baseUserSchema.pick({ id: true }))
     .query(async ({ input }) => await deleteUser(input.id)),
 
   // Updates a user's password
-  changePassword: publicProcedure
+  changePassword: protectedProcedure
     .input(baseUserSchema.pick({ id: true, password: true }))
     .query(
       async ({ input }) => await changeUserPassword(input.id, input.password)
