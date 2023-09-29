@@ -17,7 +17,7 @@ const salt = genSaltSync(10)
  * @returns {Promise<CreateUserResponse>} - The new user and a message (password is omitted)
  */
 
-type CreateUserResponse = {
+export type CreateUserResponse = {
   newUser: Omit<BaseUserData, 'password'>
   message: string
   status: number
