@@ -1,12 +1,7 @@
 import Link from 'next/link'
 import BackgroundGradient from '~/components/Theme/BackgroundGradient'
 
-import { api } from '~/utils/api'
-
 const IntroHero = () => {
-  const { data } = api.user.hello.useQuery({ text: 'Nick' })
-  const greeting = data?.greeting
-  console.log(greeting)
   return (
     <>
       <BackgroundGradient />
