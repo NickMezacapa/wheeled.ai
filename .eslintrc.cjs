@@ -34,13 +34,13 @@ const config = {
       },
     ],
     '@typescript-eslint/no-unused-vars': [
-      'warn',
+      'off',
       {
         argsIgnorePattern: '^_',
       },
     ],
     'no-unused-vars': [
-      1,
+      'off',
       {
         args: 'after-used',
         argsIgnorePattern: '^_',

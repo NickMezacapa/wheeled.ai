@@ -1,4 +1,4 @@
-export type UserData = {
+export type BaseUserData = {
   password: string
   firstName: string
   lastName: string
