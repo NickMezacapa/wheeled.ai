@@ -13,7 +13,7 @@ const IntroHero = () => {
   return (
     <>
       <BackgroundGradient />
-      <section className='Animation-riseUp mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-20 text-center opacity-0 sm:px-6 lg:px-8 lg:pt-32'>
+      <section className='Animation-riseUp mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-[3.8rem] text-center opacity-0 sm:px-6 lg:px-8 lg:pt-32'>
         <h1 className='font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-[#e3edf6] sm:text-6xl md:text-7xl'>
           Inspections{' '}
           <span className='relative whitespace-nowrap text-blue-600'>
