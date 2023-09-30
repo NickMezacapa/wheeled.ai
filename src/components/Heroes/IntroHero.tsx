@@ -14,7 +14,7 @@ const IntroHero = () => {
     <>
       <BackgroundGradient />
       <section className='Animation-riseUp mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-20 text-center opacity-0 sm:px-6 lg:px-8 lg:pt-32'>
-        <h1 className='font-display mx-auto max-w-4xl text-4xl font-medium tracking-tight text-[#e3edf6] sm:text-7xl'>
+        <h1 className='font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-[#e3edf6] sm:text-6xl md:text-7xl'>
           Inspections{' '}
           <span className='relative whitespace-nowrap text-blue-600'>
             <svg
@@ -33,7 +33,13 @@ const IntroHero = () => {
           </span>
           Streamline vehicle assessment with AI.
         </h1>
-        <div className='mx-auto mt-6 max-w-2xl text-lg tracking-tight text-graySecondary'>
+        <div className='mx-auto mt-6 max-w-2xl text-lg tracking-tight text-graySecondary sm:hidden'>
+          <p>
+            Wheeled.AI automates the entire rideshare vehicle inspection
+            workflow so you can earn quicker.
+          </p>
+        </div>
+        <div className='mx-auto mt-6 hidden max-w-2xl text-lg tracking-tight text-graySecondary sm:block'>
           <h4>
             Scheduling in-person inspections and doing manual paperwork is so
             outdated.

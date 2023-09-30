@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "next build",
+    "code:lines": "cloc exclude-dir=node_modules,public .",
     "db:push": "prisma db push",
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "fix:lint": "eslint --fix .",
