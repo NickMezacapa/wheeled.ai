@@ -37,6 +37,7 @@
     "@trpc/next": "^10.37.1",
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
+    "axios": "^1.5.1",
     "bcrypt-ts": "^4.0.0",
     "clsx": "^2.0.0",
     "focus-visible": "^5.2.0",
