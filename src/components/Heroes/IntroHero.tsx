@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import BackgroundGradient from '~/components/Theme/BackgroundGradient'
+import BackgroundImage from '~/components/Theme/BackgroundImage'
 /* import { api } from '~/utils/api' */
 
 const IntroHero = () => {
@@ -14,7 +15,12 @@ const IntroHero = () => {
   return (
     <>
       <BackgroundGradient />
-      <section className='Animation-riseUp mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-[4.5rem] text-center opacity-0 sm:px-6 sm:pt-[3.8rem] lg:px-8 lg:pt-32'>
+      <BackgroundImage
+        alt='Dark Background image for Wheeled.AI'
+        className='h-full w-full object-cover object-center'
+        src='/assets/dark-bg.jpg'
+      />
+      <section className='Animation-riseUp z-[10] mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-[4.5rem] text-center opacity-0 sm:px-6 sm:pt-[3.8rem] lg:px-8 lg:pt-32'>
         <h1 className='IntroHero-Title_h1 font-display mx-auto max-w-4xl text-4xl font-medium tracking-tight text-[#e3edf6] sm:text-6xl md:text-7xl'>
           Inspections{' '}
           <span className='relative whitespace-nowrap text-blue-600'>

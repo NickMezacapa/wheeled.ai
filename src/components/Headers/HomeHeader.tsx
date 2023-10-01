@@ -6,10 +6,10 @@ import Container from '~/components/Theme/Container'
 
 const HomeHeader = () => {
   return (
-    <header>
+    <header className='z-[99999999]'>
       <nav className='flex flex-col sm:block'>
         <Container className='jusitfy-between relative z-50 ml-0 flex'>
-          <div className='relative z-10 flex w-full items-center gap-16 px-[0.5rem] pt-[3rem] text-left sm:px-[2rem]'>
+          <div className='relative z-[60] flex w-full items-center gap-16 px-[0.5rem] pt-[3rem] text-left sm:px-[2rem]'>
             <Link
               aria-label='Home'
               className='flex items-center justify-center gap-2'
