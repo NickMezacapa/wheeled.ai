@@ -3,9 +3,19 @@
 @tailwind utilities;
 
 .Animation-riseUp {
-  animation: riseUp 0.8s ease-in-out;
-  animation-delay: 0.15s;
+  animation: riseUp 0.65s ease-in-out;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
+}
+
+.Animation-fadeAndScale {
+  animation: fadeAndScale 0.75s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+}
+.AnimationContainer {
+  opacity: 0;
+  transform: scale(0.75);
 }
 
 .GradientBlur {
@@ -50,7 +60,7 @@
   bottom: 289px;
   width: 100%;
   max-width: 980px;
-  opacity: 0.2;
+  opacity: 0.18;
 }
 
 @keyframes riseUp {
@@ -61,5 +71,16 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeAndScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
