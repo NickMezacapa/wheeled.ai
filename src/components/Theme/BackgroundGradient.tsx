@@ -2,7 +2,7 @@ import Container from './Container'
 
 const BackgroundGradient = () => {
   return (
-    <Container>
+    <Container className='hidden sm:block'>
       <div className='GradientBlur Animation-fadeAndScale AnimationContainer w-full overflow-hidden'>
         <div className='GradientBg h-full w-full overflow-hidden' />
       </div>

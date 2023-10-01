@@ -15,7 +15,7 @@ const HomeHeader = () => {
               className='flex items-center justify-center gap-2'
               href='/'
             >
-              <h1 className='text-5xl font-bold'>Wheeled.AI</h1>
+              <h1 className='text-5xl font-bold text-[#e3edf6]'>Wheeled.AI</h1>
             </Link>
             <div className='ml-auto hidden items-center justify-end gap-x-6 md:flex'>
               <NavLinks />
