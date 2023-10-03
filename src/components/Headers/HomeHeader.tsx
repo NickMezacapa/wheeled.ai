@@ -15,7 +15,7 @@ const HomeHeader = () => {
               className='flex items-center justify-center gap-2'
               href='/'
             >
-              <h1 className='text-3xl font-bold text-[#e3edf6] sm:text-5xl'>
+              <h1 className='text-2xl font-bold text-[#e3edf6] sm:text-5xl'>
                 Wheeled.AI
               </h1>
             </Link>
