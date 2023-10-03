@@ -42,7 +42,7 @@ const Theme = ({ children, classNames }: LayoutProps) => (
     <ThemeProvider attribute='dark' enableSystem={true}>
       <main
         className={clsx(
-          `ease dark h-auto min-h-screen w-screen max-w-full bg-[#030a17] text-light transition ${
+          `ease dark h-auto min-h-screen w-screen max-w-full bg-[#0a0a0a] text-light transition ${
             classNames ?? ''
           } MainApp`
         )}
