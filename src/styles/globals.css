@@ -5,6 +5,8 @@
 html,
 body {
   background-color: #121c25;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .Animation-riseUp {
@@ -67,6 +69,17 @@ body {
   width: 100%;
   max-width: 980px;
   opacity: 0.18;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
 }
 
 /* ************** */
