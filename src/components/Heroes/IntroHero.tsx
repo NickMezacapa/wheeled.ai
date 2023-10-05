@@ -1,15 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
-/* import { api } from '~/utils/api' */
+import { SocialProofs } from './SocialProofs'
 
 const IntroHero = () => {
-  /*   const { data } = api.user.register.useQuery({
-    firstName: 'James',
-    lastName: 'Deere',
-    email: 'bigtrucker96@sexytime.orgy',
-    password: 'password',
-  })
-  console.log('📈 Data: ', data) */
   return (
     <section className='Animation-riseUp z-[10] mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-[4.5rem] text-center opacity-0 sm:px-6 sm:pt-[3.8rem] lg:px-8 lg:pt-32'>
       <h1 className='IntroHero-Title_h1 font-display mx-auto max-w-4xl text-4xl font-medium tracking-tight text-[#e3edf6] sm:text-6xl md:text-7xl'>
@@ -50,7 +42,6 @@ const IntroHero = () => {
           <br />
           so you can earn quicker.
         </p>
-        {/* as featured in */}
       </div>
       <div className='mt-10 flex justify-center gap-x-6'>
         <Link
@@ -72,71 +63,7 @@ const IntroHero = () => {
           <span className='ml-3'>Learn more</span>
         </Link>
       </div>
-      <div className='mt-[9rem]'>
-        <p className='font-display text-center text-base text-graySecondary/80'>
-          As featured in
-        </p>
-        <ul
-          className='mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0'
-          role='list'
-        >
-          <li>
-            <ul
-              className='flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0'
-              role='list'
-            >
-              <li className='flex'>
-                <Image
-                  alt='Benzinga'
-                  data-nimg='1'
-                  decoding='async'
-                  height={48}
-                  loading='lazy'
-                  src='/assets/bloomberg.svg'
-                  style={{ color: 'transparent' }}
-                  width={158}
-                />
-              </li>
-              <li className='flex'>
-                <Image
-                  alt='Transistor'
-                  data-nimg='1'
-                  decoding='async'
-                  height={48}
-                  loading='lazy'
-                  src='/assets/business-insider.svg'
-                  style={{ color: 'transparent' }}
-                  width={158}
-                />
-              </li>
-              <li className='flex'>
-                <Image
-                  alt='Transistor'
-                  data-nimg='1'
-                  decoding='async'
-                  height={48}
-                  loading='lazy'
-                  src='/assets/yahoo-finance.svg'
-                  style={{ color: 'transparent' }}
-                  width={158}
-                />
-              </li>
-              <li className='flex'>
-                <Image
-                  alt='Transistor'
-                  data-nimg='1'
-                  decoding='async'
-                  height={48}
-                  loading='lazy'
-                  src='/assets/benzinga.svg'
-                  style={{ color: 'transparent' }}
-                  width={158}
-                />
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      <SocialProofs />
     </section>
   )
 }
