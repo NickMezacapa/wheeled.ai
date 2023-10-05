@@ -31,5 +31,5 @@
     "**/*.cjs",
     "**/*.mjs"
   ],
-  "exclude": ["node_modules", "src/components/PrimaryFeatures.jsx"]
+  "exclude": ["node_modules"]
 }

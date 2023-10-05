@@ -1,7 +1,8 @@
 import { type NextPage } from 'next'
+
 import HomeHeader from '~/components/Headers/HomeHeader'
+import { GettingStarted } from '~/components/Heroes/GettingStarted'
 import IntroHero from '~/components/Heroes/IntroHero'
-import { PrimaryFeatures } from '~/components/PrimaryFeatures.jsx'
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
     >
       <HomeHeader />
       <IntroHero />
-      <PrimaryFeatures />
+      <GettingStarted />
     </section>
   )
 }

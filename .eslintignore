@@ -4,4 +4,3 @@ _document.tsx
 jest.config.js
 commitlint.config.js
 docs/*
-PrimaryFeatures.tsx

@@ -4,12 +4,14 @@ interface CircleBackgroundProps {
   color: string
   width?: number
   height?: number
+  className?: string
 }
 
 export function CircleBackground({
   color,
   width = 558,
   height = 558,
+  className = '',
   ...props
 }: CircleBackgroundProps) {
   const id = useId()
@@ -17,6 +19,7 @@ export function CircleBackground({
   return (
     <svg
       aria-hidden='true'
+      className={className}
       fill='none'
       height={height}
       viewBox='0 0 558 558'
