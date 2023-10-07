@@ -51,6 +51,7 @@
     "postcss-focus-visible": "^9.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
     "sinon": "^16.0.0",
     "superjson": "^1.13.1",
     "use-debounce": "^9.0.4",

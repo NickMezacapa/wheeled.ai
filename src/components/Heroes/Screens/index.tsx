@@ -4,8 +4,9 @@ import { AppScreen } from '~/components/Heroes/Screens/AppScreen'
 export const MotionAppScreenHeader = motion(AppScreen.Header)
 export const MotionAppScreenBody = motion(AppScreen.Body)
 
+type CustomAnimation = { changeCount: number; isForwards?: boolean }
 export interface ScreenProps {
-  custom?: { changeCount: number; isForwards?: boolean }
+  custom?: CustomAnimation
   animated?: boolean
 }
 
@@ -25,10 +26,7 @@ const bodyVariantBackwards = {
   transition: { duration: 0.4 },
 }
 
-const bodyVariantForwards = (custom: {
-  changeCount: number
-  isForwards?: boolean
-}) => ({
+const bodyVariantForwards = (custom: CustomAnimation) => ({
   y: '100%',
   zIndex: maxZIndex - custom.changeCount,
   transition: { duration: 0.4 },
@@ -39,9 +37,9 @@ export const bodyAnimation = {
   animate: 'animate',
   exit: 'exit',
   variants: {
-    initial: (custom: { changeCount: number; isForwards: boolean }) =>
+    initial: (custom: CustomAnimation) =>
       custom.isForwards ? bodyVariantForwards(custom) : bodyVariantBackwards,
-    animate: (custom: { changeCount: number; isForwards: boolean }) => ({
+    animate: (custom: CustomAnimation) => ({
       y: '0%',
       opacity: 1,
       scale: 1,
@@ -49,7 +47,7 @@ export const bodyAnimation = {
       filter: 'blur(0px)',
       transition: { duration: 0.4 },
     }),
-    exit: (custom: { changeCount: number; isForwards: boolean }) =>
+    exit: (custom: CustomAnimation) =>
       custom.isForwards ? bodyVariantBackwards : bodyVariantForwards(custom),
   },
 }

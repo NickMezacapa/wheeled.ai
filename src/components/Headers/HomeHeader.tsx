@@ -34,7 +34,10 @@ const HomeHeader = () => {
             </div>
           </div>
         </Container>
-        <h3 className='mt-[-1.5rem] px-[1.5rem] pt-[2rem] text-sm italic text-graySecondary sm:px-[3.5rem] sm:pt-[2.5rem] sm:text-base lg:px-[4rem]'>
+        <h3
+          aria-label='Wheeled.AI - Automated Vehicle Inspeciton Software'
+          className='mt-[-1.5rem] px-[1.5rem] pt-[2rem] text-sm italic text-graySecondary sm:px-[3.5rem] sm:pt-[2.5rem] sm:text-base lg:px-[4rem]'
+        >
           AI-powered Vehicle Inspection Software
         </h3>
       </nav>

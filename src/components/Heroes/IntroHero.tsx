@@ -3,7 +3,10 @@ import { SocialProofs } from './SocialProofs'
 
 const IntroHero = () => {
   return (
-    <section className='Animation-riseUp z-[10] mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-[4.5rem] text-center opacity-0 sm:px-6 sm:pt-[3.8rem] lg:px-8 lg:pt-32'>
+    <section
+      aria-label='Wheeled.AI makes inspections easy'
+      className='Animation-riseUp z-[10] mx-auto min-h-[3rem] max-w-7xl px-4 pb-16 pt-[4.5rem] text-center opacity-0 sm:px-6 sm:pt-[3.8rem] lg:px-8 lg:pt-32'
+    >
       <h1 className='IntroHero-Title_h1 font-display mx-auto max-w-4xl text-4xl font-medium tracking-tight text-[#e3edf6] sm:text-6xl md:text-7xl'>
         Inspections{' '}
         <span className='relative whitespace-nowrap text-blue-600'>
@@ -29,7 +32,10 @@ const IntroHero = () => {
           so you can earn quicker.
         </p>
       </div>
-      <div className='mx-auto mt-6 hidden max-w-2xl text-lg tracking-tight text-graySecondary sm:block'>
+      <div
+        aria-label='Wheeled.AI streamlines the vehicle inspection process'
+        className='mx-auto mt-6 hidden max-w-2xl text-lg tracking-tight text-graySecondary sm:block'
+      >
         <h4>
           Scheduling in-person inspections and doing manual paperwork is so
           outdated.

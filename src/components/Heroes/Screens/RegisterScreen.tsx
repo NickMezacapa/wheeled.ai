@@ -23,7 +23,9 @@ export const RegisterScreen = ({ custom, animated = false }: ScreenProps) => (
             { label: 'Email address', value: 'j.appleseed@email.com' },
           ].map(field => (
             <div key={field.label}>
-              <div className='text-sm text-gray-500'>{field.label}</div>
+              <div className='text-sm text-gray-500 focus:outline-none'>
+                {field.label}
+              </div>
               <div className='mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900'>
                 {field.value}
               </div>
