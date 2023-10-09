@@ -7,7 +7,7 @@ export const GettingStarted = () => {
   return (
     <section
       aria-label='Features for investing all your money'
-      className='bg-gray-900 py-20 sm:py-32'
+      className='bg-[rgb(11,18,33)] py-20 sm:bg-[rgb(15,23,42)] sm:py-32'
       id='features'
     >
       <Container>
