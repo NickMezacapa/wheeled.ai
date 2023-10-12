@@ -1,5 +1,5 @@
-import { FeaturesDesktop } from './Features/FeaturesDesktop'
-import { FeaturesMobile } from './Features/FeaturesMobile'
+import { FeaturesDesktop } from '../Heroes/Features/FeaturesDesktop'
+import { FeaturesMobile } from '../Heroes/Features/FeaturesMobile'
 
 import Container from '~/components/Theme/Container'
 

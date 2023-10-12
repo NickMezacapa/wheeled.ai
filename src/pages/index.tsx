@@ -1,7 +1,8 @@
 import { type NextPage } from 'next'
 
+import { GettingStarted } from '~/components/Common/GettingStarted'
+import TraditionalInspections from '~/components/Common/TraditionalInspections'
 import HomeHeader from '~/components/Headers/HomeHeader'
-import { GettingStarted } from '~/components/Heroes/GettingStarted'
 import IntroHero from '~/components/Heroes/IntroHero'
 
 const Home: NextPage = () => {
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <HomeHeader />
       <IntroHero />
       <GettingStarted />
+      <TraditionalInspections />
     </section>
   )
 }
