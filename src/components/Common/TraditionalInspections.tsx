@@ -41,8 +41,7 @@ const TraditionalInspections = () => {
             </p>
             <p className='mt-8 w-full text-[#1d1d1fba] md:w-4/5'>
               Vehicle inspection is a mandatory prerequisite for all ride share
-              drivers. While there are various methods to fulfill this
-              compliance, the conventional approach involves scheduling
+              drivers. The conventional approach involves scheduling
               appointments at mechanic shops,{' '}
               <span className='font-semibold'>
                 which often results in certification delays by several days,
@@ -50,10 +49,9 @@ const TraditionalInspections = () => {
               </span>
             </p>
             <p className='mt-4 w-full text-[#1d1d1fba] md:w-4/5'>
-              WheeledAI offers a cutting-edge and streamlined solution to
-              fulfill the ride share vehicle inspection mandate without the need
-              for a trip to a mechanic. You can effortlessly access our platform
-              via any web browser, where you can simply upload photos and video
+              WheeledAI offers a streamlined solution without the need for a
+              trip to a mechanic. You can effortlessly access our platform via
+              any web browser, where you can simply upload photos and video
               clips of your vehicle from your driveway or any location that
               suits you.
             </p>
