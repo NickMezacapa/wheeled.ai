@@ -33,12 +33,6 @@ const TraditionalInspections = () => {
             <h1 className='text-3xl font-semibold text-[#1d1d1f]'>
               Ride Share Inspection Requirements
             </h1>
-            <p className='mt-12 w-full text-lg font-semibold text-[#1d1d1f] md:w-4/5'>
-              <span className='bg-blue-300/50'>
-                WheeledAI is a third of the price, takes less than 30 minutes,
-                and you never leave your driveway.
-              </span>
-            </p>
             <p className='mt-8 w-full text-[#1d1d1fba] md:w-4/5'>
               Vehicle inspection is a mandatory prerequisite for all ride share
               drivers. The conventional approach involves scheduling
@@ -48,12 +42,11 @@ const TraditionalInspections = () => {
                 headaches finding a mechanic, and a costly price point.
               </span>
             </p>
-            <p className='mt-4 w-full text-[#1d1d1fba] md:w-4/5'>
-              WheeledAI offers a streamlined solution without the need for a
-              trip to a mechanic. You can effortlessly access our platform via
-              any web browser, where you can simply upload photos and video
-              clips of your vehicle from your driveway or any location that
-              suits you.
+            <p className='mt-8 w-full text-lg font-semibold text-[#1d1d1f] md:w-4/5'>
+              <span className='bg-blue-300/50'>
+                WheeledAI is a third of the price, takes less than 30 minutes,
+                and you never leave your driveway.
+              </span>
             </p>
             <ul className='ml-6 mt-10 list-disc font-semibold'>
               {FEATURES.map((feature: string, idx: number) => (
